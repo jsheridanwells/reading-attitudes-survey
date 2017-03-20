@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Reading Attitudes Survey</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+
+  <body>
+    <header>
+        Reading Attitudes Survey
+    </header>
+
+    <div class="container" id="start-page">
+      <div class="row">
+       
+        <div class="col-md-12">
+          <p class="start"><strong>"Elementary Reading Attitudes Survey" by Michael C. McKenna and Dennis J. Kear</strong></p>
+          <img src="img/img4.png" class="start">
+          <p class="start">"The Elementary Reading Attitude Survey provides a quick indication of student attitudes toward reading.  It consists of 20 items and can be administered to an entire classroom in about 10 minutes.  Each item presents a brief, simply worded statement about reading, followed by four pictures of Garfield.  Each pose is designed to depict a different emotional state, ranging from very positive to very negative."  </p>
+          <p>See the full study at: <a href="http://www.leadtoreadkc.org/wp-content/uploads/2012/12/Professor-Garfield-reading-survey-used-by-Lead-to-Read-KC.pdf" target="_blank">http://www.leadtoreadkc.org/wp-content/uploads/2012/12/Professor-Garfield-reading-survey-used-by-Lead-to-Read-KC.pdf</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 button-box">
+          <a href="#" id="start-button" class="button">
+            Start Survey
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <div class="container survey hidden" id="survey">
+      
+      <div class="row">
+      	<div class="col-md-12">
+      		<p class="question-text" id="question">
+      		Click <strong>Next</strong> to begin.  
+      		</p>
+      	</div>
+      </div>
+      <div class="row">
+    		<div class="col-md-3 img-boxes">
+        	<a href="#" class="image-link">
+            <img src="img/img1.png" alt="garfield" class="default-border garfield" id="one">
+          </a>
+    		</div>
+    		<div class="col-md-3 img-boxes">
+				  <a href="#" class="image-link">
+            <img src="img/img2.png" alt="garfield" class="default-border garfield" id="two">
+          </a> 
+    		</div>
+    		<div class="col-md-3 img-boxes">
+				  <a href="#" class="image-link">
+            <img src="img/img3.png" alt="garfield" class="default-border garfield" id="three">
+          </a>
+    		</div>
+    		<div class="col-md-3 img-boxes">
+				  <a href="#" class="image-link">
+            <img src="img/img4.png" alt="garfield" class="default-border garfield" id="four">
+          </a>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col-md-12 button-box">
+          <a href="#" id="next-button" class="button">
+            Next
+          </a>
+    		</div>
+    	</div>
+    </div>
+    
+    <div class="container results hidden">
+      <div class="row">
+        <h1>Results:</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="row">
+            <div class=" col-md-12">
+              <h3>Recreational Reading</h3>
+              <span id ="rec-score" class="med-score"></span><span class="med-score">%</span>
+              <img src="img/img4.png" id="rec-img" height="120px">
+            </div>
+            <div class=" col-md-12">
+              <h3>Academic Reading</h3>
+              <span id ="acad-score" class="med-score"></span><span class="med-score">%</span>
+              <img src="img/img3.png" id="acad-img" height="120px">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h2>Composite Score</h2>
+          <span id ="composite" class="lg-score"></span><span class="med-score">%</span>
+          <img src="img/img4.png" id="comp-img"><br>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js_bin/questions.js"></script>
+	<script src="js_bin/main.js"></script>
+  </body>
+</html>
